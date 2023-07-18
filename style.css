@@ -34,15 +34,15 @@ nav{
     align-items: center;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.nav-logo {
+.logo {
   display: flex;
   align-items: center;
 }
-.nav-logo img{
+.logo img{
     width: 50px;
     height: 30px;
 }
-.nav-logo h1{
+.logo h1{
     color: #0B0223;
     font-size: 2.8rem;
     font-weight: 700;
@@ -90,6 +90,7 @@ nav .active{
     font-size: 2.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: left;
 }
 .goat{
     font-size: 5.5rem;
@@ -109,6 +110,7 @@ nav .active{
     font-size: 1.25rem;
     color: #534C64;
     margin-top: 10px;
+    text-align: left;
 }
 .banner-container p i{
     margin-right: 10px;
@@ -203,6 +205,99 @@ main{
     line-height: 30px;
     margin-top: 10px;
 }
+
+.our-all-games{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 50px;
+    row-gap: 30px;
+   
+}
+.game{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.game:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 48px;
+    padding: 10px;
+    color: #FF42A5;
+
+}
+.game img{
+    width: 50px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #0B0223;
+    margin-top: 70px;
+}
+.footer-logo h1{
+    color: #fff;
+}
+.footer-logo{
+    justify-content: center;
+}
+.footer-container{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 100px;
+    position: relative;
+}
+.support{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.privacy{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.privacy p{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.social-icon{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.social-icon a i{
+    color: #fff;
+    font-size: 30px;
+}
+.social-icon a .fa-twitter:hover{
+    color: rgb(71, 71, 233);
+}
+.social-icon a .fa-facebook:hover{
+    color: navy;
+}
+.social-icon a .fa-youtube:hover{
+    color: red;
+}
+
+.footer-copyright{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
 /* responsive layout */
 /* responsive in mobile device */
 @media screen and (max-width:576px) {
@@ -274,6 +369,26 @@ main{
         margin-top: -80px;
         margin-left: -50px;
     }
+    footer{
+        width: 100%;
+        height: 600px;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 40px;
+    }
+  
+ .support{
+    flex-wrap: wrap;
+    gap: 30px;
+ }
+ .social-icon{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .privacy{
+    flex-wrap: wrap;
+ }
 
 }
 /* responsive in middle device */
@@ -296,6 +411,9 @@ main{
         width: 100%;
         text-align: center;
     }
+    .banner-container p{
+        text-align: center;
+    }
     .banner-img{
         width: 100%;
     }
@@ -307,6 +425,10 @@ main{
     }
     .video-description{
         text-align: center;
+    }
+    .anniversary{
+        padding: 0 50px;
+        margin-top: 10px;
     }
 
 }
