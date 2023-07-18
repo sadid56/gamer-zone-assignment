@@ -8,6 +8,20 @@
     box-sizing: border-box;
     font-family: 'Work Sans';
 }
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-title-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
 span{
     color: #FF42A5;
 }
@@ -131,20 +145,7 @@ main{
 .online-games{
     margin-top: 50px;
 }
-.online-games-title{
-    color:#0B0223 ;
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-}
-.video-title{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 48px;
-    font-weight: 700;
-}
+
 .online-games-description{
     font-weight: 400;
     font-size: 18px;
@@ -167,13 +168,48 @@ main{
     font-weight: 500;
     margin-top: 10px;
 }
-
+.online-games-title{
+ color:#0B0223 ;
+}
+.anniversary{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-top: 70px;
+}
+.anniversary-container h2, p{
+    text-align: right;
+   
+}
+.anniversary-container{
+    width: 50%;
+}
+.anniversary-img{
+    width: 50%;
+}
+.anniversary-img img{
+    width: 100%;
+}
+.anniversary-socond-img{
+    width: 50%;
+    margin-top: -150px;
+    margin-left: -110px;
+    position: relative;
+}
+.anniversary-description{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 10px;
+}
 /* responsive layout */
 /* responsive in mobile device */
 @media screen and (max-width:576px) {
     nav,
     nav ul,
-    .banner
+    .banner,
+    .anniversary
     {
         flex-direction: column;
     }
@@ -218,6 +254,25 @@ main{
     }
     .online-games{
         padding: 20px;
+    }
+    .anniversary{
+        padding: 20px;
+        gap: 50px;
+        margin-top: 30px;
+    }
+    .anniversary-container{
+        width: 100%;
+
+    }
+    .anniversary-container h2, p{
+        text-align: center;
+    }
+    .anniversary-img{
+        width: 80%;
+    }
+    .anniversary-socond-img{
+        margin-top: -80px;
+        margin-left: -50px;
     }
 
 }
