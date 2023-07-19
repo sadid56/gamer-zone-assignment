@@ -29,7 +29,7 @@ span{
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     line-height: 26px;
 }
@@ -382,6 +382,7 @@ footer{
     }
     nav li{
         margin-top: 20px;
+        padding-bottom: 20px;
     }
     .banner{
         padding: 30px;
@@ -429,6 +430,9 @@ footer{
     .online-games{
         padding: 20px;
     }
+    .overly p{
+       left: 33%;
+    }
     .anniversary{
         padding: 20px;
         gap: 50px;
@@ -442,11 +446,14 @@ footer{
         text-align: center;
     }
     .anniversary-img{
-        width: 80%;
+        width: 100%;
     }
     .anniversary-socond-img{
         margin-top: -80px;
         margin-left: -50px;
+    }
+    .second-anniversary-section{
+        flex-direction: column-reverse;
     }
     .anniversary-two{
         margin-left: 180px;
@@ -478,6 +485,11 @@ footer{
 @media screen and (min-width:576px) and (max-width:992px) {
     nav{
         padding: 10px;
+        flex-direction: column;
+    
+    }
+    nav ul{
+        margin-top: 20px;
     }
     .btn{
         display: flex;
@@ -523,9 +535,27 @@ footer{
         padding: 0 50px;
         margin-top: 50px;
     }
+    .anniversary-container h2, p{
+        text-align: center;
+        
+    }
+    .overly img{
+        top: 40%;
+        left: 40%;
+    }
+    .overly p{
+        left: 30%;
+        top: 60%;
+    }
 .anniversary-two{
     margin-left: 220px;
     margin-top: -80px;
+}
+ .anniversary{
+    flex-direction: column;
+ }
+.second-anniversary-section{
+    flex-direction: column-reverse;
 }
 
 }
