@@ -294,6 +294,9 @@ main{
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 48px;
 }
 .game:hover{
     border: 2px solid #FF42A5;
