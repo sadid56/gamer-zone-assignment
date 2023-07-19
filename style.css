@@ -85,13 +85,19 @@ nav .active{
 
 .banner{
     display: flex;
-    gap: 50px;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
+    gap: 50px;
+    
 }
 .banner-container{
     width: 50%;
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 59px;
+    
 }
 .banner-title{
     color: #0B0223;
@@ -110,6 +116,7 @@ nav .active{
 }
 .banner-img{
     width: 50%;
+padding-right: 100px;
 }
 .banner-img img{
     width: 100%;
@@ -388,16 +395,19 @@ footer{
         padding: 30px;
         flex-direction: column-reverse;
         align-items: center;
+        
     }
     .banner-container{
         width: 100%;
-        align-items: center;
+        padding-left: 0;
+        
     }
     .banner-container p{
         padding-left: 50px;
     }
     .banner-img{
         width: 100%;
+       padding-right: 0;
     }
     .banner-title{
         text-align: center;
@@ -511,6 +521,7 @@ footer{
     }
     .banner-img{
         width: 100%;
+        padding: 0 50px;
     }
     .banner-title{
         text-align: center;
