@@ -8,6 +8,10 @@
     box-sizing: border-box;
     font-family: 'Work Sans';
 }
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
 .section-title{
     font-size: 40px;
     font-weight: 700;
@@ -96,7 +100,7 @@ nav .active{
     background-position: left;
     background-size: cover;
     padding-left: 100px;
-    padding-top: 59px;
+    padding-top: 60px;
     
 }
 .banner-title{
@@ -153,10 +157,11 @@ padding-right: 100px;
     border: 0;
     border-radius: 48px;
 }
+
 /* header part end */
 /* main part styles */
 main{
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .we-are-gamer{
@@ -280,6 +285,68 @@ main{
     line-height: 30px;
     margin-top: 10px;
 }
+.careers{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    
+}
+.careers-container{
+    width: 100%;
+    padding-left: 100px;
+}
+.careers-img{
+    width: 100%;
+}
+.careers-img img{
+    width: 100%;
+}
+.career-title{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+.career-description{
+    color: #ebe9ee;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 20px;
+}
+.more-description{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: start;
+}
+.description-one{
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.description-two{
+    color: #fff;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+#outline-btn{
+    background-color: #fff;
+    color: #FF42A5;
+    border: 0;
+    border-radius: 48px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
 .our-all-games{
     display: flex;
     flex-wrap: wrap;
@@ -321,7 +388,7 @@ footer{
     justify-content: center;
 }
 .footer-container{
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
     text-align: center;
     align-items: center;
@@ -331,6 +398,7 @@ footer{
 }
 .support{
     display: flex;
+    
     justify-content: space-between;
     cursor: pointer;
     margin-top: 30px;
@@ -404,8 +472,7 @@ footer{
     }
     .banner-container{
         width: 100%;
-        padding-left: 0;
-        
+        padding: 30px 10px;
     }
     .banner-container p{
         padding-left: 50px;
@@ -473,6 +540,14 @@ footer{
     .anniversary-two{
         margin-left: 180px;
     }
+    .careers{
+        flex-direction: column;
+        height: fit-content;
+        gap: 50px;
+    }
+    .careers-container{
+        padding: 30px;
+    }
         
     footer{
         width: 100%;
@@ -520,7 +595,7 @@ footer{
     .banner-container{
         width: 100%;
         text-align: center;
-        padding-left: 0;
+        padding: 30px;
     }
     .banner-container p{
         text-align: center;
@@ -573,6 +648,17 @@ footer{
  }
 .second-anniversary-section{
     flex-direction: column-reverse;
+}
+.careers{
+    flex-direction: column;
+    height: fit-content;
+    gap: 50px;
+}
+.careers-container{
+    padding: 50px;
+}
+.privacy{
+    flex-wrap: wrap;
 }
 
 }
