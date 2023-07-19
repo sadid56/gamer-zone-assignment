@@ -280,7 +280,6 @@ main{
     line-height: 30px;
     margin-top: 10px;
 }
-
 .our-all-games{
     display: flex;
     flex-wrap: wrap;
@@ -355,14 +354,17 @@ footer{
     color: #fff;
     font-size: 30px;
 }
-.social-icon a .fa-twitter:hover{
+.social-icon a .fa-twitter{
     color: rgb(71, 71, 233);
 }
-.social-icon a .fa-facebook:hover{
-    color: navy;
+.social-icon a .fa-facebook{
+    color: rgb(29, 29, 222);
 }
-.social-icon a .fa-youtube:hover{
+.social-icon a .fa-youtube{
     color: red;
+}
+.social-icon a .fa-instagram{
+    color: rgb(142, 88, 88);
 }
 
 .footer-copyright{
