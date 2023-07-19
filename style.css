@@ -444,13 +444,13 @@ footer{
        left: 33%;
     }
     .anniversary{
-        padding: 20px;
+    margin-top: 10px;
         gap: 50px;
-        margin-top: 30px;
+        padding: 50px;
     }
     .anniversary-container{
         width: 100%;
-
+        
     }
     .anniversary-container h2, p{
         text-align: center;
@@ -515,6 +515,7 @@ footer{
     .banner-container{
         width: 100%;
         text-align: center;
+        padding-left: 0;
     }
     .banner-container p{
         text-align: center;
